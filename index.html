@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Launch Checklist</title>
-        <link rel = "stylesheet" type = "text/css" href = "styles.css" />
-        <script src = "script.js"></script>
-    </head>
-    <body>
-        <h1>Launch Checklist Form</h1>
-        <div id="missionTarget">
-            <!-- Fetch some planetary data -->
-        </div> 
-        
-        <form id="launchForm">
-            <div class="form-group">
-                <label>Pilot Name 
-                  <input type="text" name="pilotName"/>
-                </label>
-            </div>
-            <div class="form-group">
-                <label>Co-pilot Name 
-                  <input type="text" name="copilotName"/>
-                </label>
-            </div>
-            <div class="form-group">
-                <label>Fuel Level (L) 
-                  <input type="text" name="fuelLevel"/>
-                </label> 
-            </div>
-            <div class="form-group">
-                <label>Cargo Mass (kg) 
-                  <input type="text" name="cargoMass"/>
-                </label>
-            </div>
-            <button>Submit</button>
-        </form>
 
-        <div id="launchStatusCheck">
-            <h2 id="launchStatus">Awaiting Information Before Launch</h2>
-              <ul id="itemStatus">
-                  <li id="pilotStatus"></li>
-                  <li id="copilotStatus"></li>
-                  <li id="fuelStatus"></li>
-                  <li id="cargoStatus"></li>
-              </ul>
+<head>
+    <title>Launch Checklist</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Launch Checklist Form</h1>
+    <div id="missionTarget">
+         <!-- Fetch some planetary data -->
+    </div>
+
+    <form id="launchForm">
+        <div class="form-group">
+            <label>Pilot Name
+                <input type="text" name="pilotName" id="pilotName" />
+            </label>
         </div>
+        <div class="form-group">
+            <label>Co-pilot Name
+                <input type="text" name="copilotName" id="copilotName" />
+            </label>
+        </div>
+        <div class="form-group">
+            <label>Fuel Level (L)
+                <input type="text" name="fuelLevel" id="fuelLevelName" />
+            </label>
+        </div>
+        <div class="form-group">
+            <label>Cargo Mass (kg)
+                <input type="text" name="cargoMass" id="cargoMassName" />
+            </label>
+        </div>
+        <button>Submit</button>
+    </form>
 
-    </body>
+    <div id="launchStatusCheck">
+        <!-- insert status here -->
+        <h2 id="launchStatus">Awaiting Information Before Launch</h2>
+        <ol id="itemStatus">
+            <li id="pilotStatus"></li>
+            <li id="copilotStatus"></li>
+            <li id="fuelStatus"></li>
+            <li id="cargoStatus"></li>
+        </ol>
+    </div>
+
+</body>
+
 </html>
